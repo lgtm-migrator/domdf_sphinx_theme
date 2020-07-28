@@ -14,7 +14,7 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 #
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 #  GNU General Public License for more details.
 #
 #  You should have received a copy of the GNU General Public License
@@ -22,11 +22,30 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #
-#
 
-__author__ = "Dominic Davis-Foster"
-__copyright__ = "2020 Dominic Davis-Foster"
+# stdlib
+import os.path
 
-__license__ = "MIT License"
-__version__ = "0.0.0"
-__email__ = "dominic@davis-foster.co.uk"
+# 3rd party
+import sphinx_rtd_theme
+
+__author__: str = "Dominic Davis-Foster"
+__copyright__: str = "2020 Dominic Davis-Foster"
+
+__license__: str = "MIT License"
+__version__: str = "0.0.0"
+__email__: str = "dominic@davis-foster.co.uk"
+
+__version_full__ = __version__
+
+
+def setup(app):
+	# add_html_theme is new in Sphinx 1.6+
+	sphinx_rtd_theme.setup(app)
+	if hasattr(app, "add_html_theme"):
+		theme_path = os.path.abspath(os.path.dirname(__file__))
+		app.add_html_theme("domdf_sphinx_theme", theme_path)
+	return {
+			"version": __version__,
+			"parallel_read_safe": True,
+			}

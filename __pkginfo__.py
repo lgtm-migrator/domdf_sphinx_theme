@@ -44,7 +44,7 @@ modname = "domdf_sphinx_theme"
 pypi_name = "domdf_sphinx_theme"
 import_name = "domdf_sphinx_theme"
 __license__ = "MIT License"
-short_desc = 'Customised "sphinx_rtd_theme" used by my Python projects.'
+short_desc = "Customised 'sphinx_rtd_theme' used by my Python projects."
 __author__ = author = "Dominic Davis-Foster"
 author_email = "dominic@davis-foster.co.uk"
 github_username = "domdfcoding"

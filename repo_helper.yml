@@ -7,7 +7,7 @@ email: "dominic@davis-foster.co.uk"
 username: "domdfcoding"
 version: "0.0.0"
 license: "MIT"
-short_desc: 'Customised "sphinx_rtd_theme" used by my Python projects.'
+short_desc: "Customised 'sphinx_rtd_theme' used by my Python projects."
 
 enable_conda: False
 enable_tests: False
@@ -34,6 +34,9 @@ classifiers:
   - 'Topic :: Utilities'
   - "Topic :: Documentation"
   - "Topic :: Software Development :: Documentation"
+  - 'Framework :: Sphinx'
+  - 'Framework :: Sphinx :: Theme'
+  - 'Environment :: Web Environment'
 
 exclude_files:
   - setup

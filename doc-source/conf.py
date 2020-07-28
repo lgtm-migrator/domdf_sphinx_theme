@@ -12,6 +12,7 @@ from sphinx.locale import _
 
 sys.path.append(os.path.abspath('.'))
 sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('./demo/'))
 
 from __pkginfo__ import __version__
 
@@ -82,7 +83,7 @@ intersphinx_mapping = {
 		"attrs": ('https://www.attrs.org/en/stable/', None),
 		}
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'domdf_sphinx_theme'
 html_theme_options = {
 		'logo_only': False,
 		}

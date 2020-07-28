@@ -4,10 +4,11 @@ domdf_sphinx_theme
 
 .. start short_desc
 
-**Customised "sphinx_rtd_theme" used by my Python projects.**
+**Customised 'sphinx_rtd_theme' used by my Python projects.**
 
 .. end short_desc
 
+Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ by ReadTheDocs.
 
 .. start shields
 
@@ -18,7 +19,7 @@ domdf_sphinx_theme
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos| |coveralls| |codefactor|
+	  - |travis| |actions_windows| |actions_macos| |codefactor|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
@@ -49,10 +50,6 @@ domdf_sphinx_theme
 .. |requires| image:: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements.svg?branch=master
 	:target: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements/?branch=master
 	:alt: Requirements Status
-
-.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/domdf_sphinx_theme/master?logo=coveralls
-	:target: https://coveralls.io/github/domdfcoding/domdf_sphinx_theme?branch=master
-	:alt: Coverage
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/domdf_sphinx_theme?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/domdf_sphinx_theme
@@ -98,7 +95,11 @@ domdf_sphinx_theme
 
 .. end shields
 
-|
+Changes include:
+
+* Smooth scrolling between sections.
+* Wider body by default.
+* Extra spacing in lists.
 
 Installation
 --------------
