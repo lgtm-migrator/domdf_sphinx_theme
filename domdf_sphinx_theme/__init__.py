@@ -27,7 +27,7 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 import os.path
 
 # 3rd party
-import sphinx_rtd_theme
+import sphinx_rtd_theme  # type: ignore
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
