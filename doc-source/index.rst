@@ -103,7 +103,8 @@ Changes include:
 
 |
 
-The examples that show the look and feel of this theme are from `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_. Copyright (c) 2013-2018 Dave Snider, Read the Docs, Inc. & contributors.
+| The examples that show the look and feel of this theme are from `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_.
+| Copyright (c) 2013-2018 Dave Snider, Read the Docs, Inc. & contributors.
 
 .. toctree::
 	:hidden:

@@ -40,5 +40,8 @@ classifiers:
 
 exclude_files:
   - setup
+  - conf
 
 #travis_pypi_secure:
+
+sphinx_html_theme: domdf_sphinx_theme
