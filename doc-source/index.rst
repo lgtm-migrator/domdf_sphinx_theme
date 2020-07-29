@@ -100,6 +100,7 @@ Changes include:
 * Smooth scrolling between sections.
 * Wider body by default.
 * Extra spacing in lists.
+* Some JavaScript trickery to fix the ReadTheDocs versions menu.
 
 |
 
