@@ -5987,3 +5987,10 @@ div.contents li p:last-child {
 .rst-content .section div.contents ul p {
     margin-bottom: 0 !important;
 }
+
+/* Move EthicalAds to bottom of sidebar */
+
+.wy-nav-side .ethical-rtd {
+	position: absolute;
+	bottom: 0;
+}
