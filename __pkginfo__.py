@@ -39,7 +39,7 @@ __copyright__ = """
 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 """
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 modname = "domdf_sphinx_theme"
 pypi_name = "domdf_sphinx_theme"
 import_name = "domdf_sphinx_theme"
