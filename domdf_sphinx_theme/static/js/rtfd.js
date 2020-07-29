@@ -1,7 +1,5 @@
-const destination = $('#rtfd_button_dest');
-const to_remove = $('#rtfd_button_to_remove');
-const source = $(".injected div.rst-versions div.rst-other-versions");
+const destination = document.getElementById("rtfd_button_dest");
 
 destination.onload = function(){
-    to_remove.replaceWith(source)
+    $('#rtfd_button_to_remove').replaceWith($(".injected div.rst-versions div.rst-other-versions"))
 };
