@@ -5990,7 +5990,7 @@ div.contents li p:last-child {
 
 /* Move EthicalAds to bottom of sidebar */
 
-.wy-nav-side .ethical-rtd {
-	position: absolute;
-	bottom: 0;
-}
+/*.wy-nav-side .ethical-rtd {*/
+/*	position: absolute;*/
+/*	bottom: 0;*/
+/*}*/
