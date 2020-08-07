@@ -45,8 +45,8 @@ pypi_name = "domdf_sphinx_theme"
 import_name = "domdf_sphinx_theme"
 __license__ = "MIT License"
 short_desc = "Customised 'sphinx_rtd_theme' used by my Python projects."
-__author__ = author = "Dominic Davis-Foster"
-author_email = "dominic@davis-foster.co.uk"
+__author__ = author = 'Dominic Davis-Foster'
+author_email = 'dominic@davis-foster.co.uk'
 github_username = "domdfcoding"
 web = github_url = "https://github.com/domdfcoding/domdf_sphinx_theme"
 repo_root = pathlib.Path(__file__).parent
