@@ -28,6 +28,7 @@ import os.path
 
 # 3rd party
 import sphinx_rtd_theme  # type: ignore
+from sphinx.application import Sphinx
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
@@ -38,13 +39,23 @@ __email__: str = "dominic@davis-foster.co.uk"
 
 __version_full__ = __version__
 
+__all__ = ["setup"]
 
-def setup(app):
+
+def setup(app: Sphinx):
+	"""
+	Setup Sphinx extension.
+
+	:param:
+	"""
+
 	# add_html_theme is new in Sphinx 1.6+
 	sphinx_rtd_theme.setup(app)
+
 	if hasattr(app, "add_html_theme"):
 		theme_path = os.path.abspath(os.path.dirname(__file__))
 		app.add_html_theme("domdf_sphinx_theme", theme_path)
+
 	return {
 			"version": __version__,
 			"parallel_read_safe": True,
