@@ -5988,6 +5988,13 @@ div.contents li p:last-child {
     margin-bottom: 0 !important;
 }
 
+/* Extra spacing after function/class name and signature*/
+
+code.sig-name {
+    padding-right: 4px !important;
+}
+
+
 /* Move EthicalAds to bottom of sidebar */
 
 /*.wy-nav-side .ethical-rtd {*/
