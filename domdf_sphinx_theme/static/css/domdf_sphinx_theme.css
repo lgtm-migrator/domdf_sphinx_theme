@@ -5976,9 +5976,14 @@ span[id*='MathJax-Span'] {
 }
 
 
-li p:last-child {
+ul li p:last-child {
+    margin-bottom: 2pt !important;
+}
+
+ul.expanded li p:last-child {
     margin-bottom: 12pt !important;
 }
+
 
 div.contents li p:last-child {
     margin-bottom: 0 !important;
@@ -6001,3 +6006,37 @@ code.sig-name {
 /*	position: absolute;*/
 /*	bottom: 0;*/
 /*}*/
+
+
+/* Tweaks for sidebar font size */
+
+
+.wy-menu-vertical li.toctree-l1 code {
+    font-size: 80%;
+}
+
+.wy-menu-vertical li.toctree-l3 {
+    font-size: 0.8em;
+}
+
+.wy-menu-vertical li.toctree-l3 code {
+    font-size: 100%;
+}
+
+.wy-menu-vertical li.toctree-l2.current ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+code.docutils.literal.notranslate.xref{
+    font-weight: bold;
+}
+
+code.docutils.literal.notranslate:not(.xref) {
+    font-weight: normal;
+}
+
+.toctree-l1 code.docutils.literal.notranslate {
+    font-weight: normal;
+}

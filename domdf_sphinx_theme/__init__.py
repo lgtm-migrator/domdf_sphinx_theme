@@ -27,7 +27,11 @@ Customised "sphinx_rtd_theme" used by my Python projects.
 import os.path
 
 # 3rd party
+import sphinx.writers.html5
 import sphinx_rtd_theme  # type: ignore
+from docutils import nodes
+from docutils.nodes import Element
+from sphinx import addnodes
 from sphinx.application import Sphinx
 
 __author__: str = "Dominic Davis-Foster"
@@ -39,22 +43,76 @@ __email__: str = "dominic@davis-foster.co.uk"
 
 __version_full__ = __version__
 
-__all__ = ["setup"]
+__all__ = ["setup", "HTML5Translator"]
+
+
+class HTML5Translator(sphinx.writers.html5.HTML5Translator):
+	"""
+	Custom :class:`sphinx.writers.html5.HTML5Translator` to adjust spacing in bullet pointed lists.
+	"""
+
+	def visit_bullet_list(self, node: Element) -> None:
+		if len(node) == 1 and isinstance(node[0], addnodes.toctree):
+			# avoid emitting empty <ul></ul>
+			raise nodes.SkipNode
+
+		atts = {}
+
+		old_compact_simple = self.compact_simple
+		self.context.append((self.compact_simple, self.compact_p))
+		self.compact_p = None
+		self.compact_simple = self.is_compactable(node)
+
+		classes = []
+
+		if self.compact_simple and not old_compact_simple:
+			classes.append('simple')
+
+		if any(len(child) > 1 for child in node):
+			classes.append('expanded')
+
+		if classes:
+			atts["class"] = " ".join(classes)
+
+		self.body.append(self.starttag(node, 'ul', **atts))
+
+	def visit_enumerated_list(self, node):
+		atts = {}
+		classes = []
+
+		if 'start' in node:
+			atts['start'] = node['start']
+
+		if 'enumtype' in node:
+			classes.append(node['enumtype'])
+
+		if self.is_compactable(node):
+			classes.append('simple')
+
+		if any(len(child) > 1 for child in node):
+			classes.append('expanded')
+
+		if classes:
+			atts["class"] = " ".join(classes)
+
+		self.body.append(self.starttag(node, 'ol', **atts))
 
 
 def setup(app: Sphinx):
 	"""
 	Setup Sphinx extension.
 
-	:param:
+	:param app: The Sphinx app.
 	"""
 
-	# add_html_theme is new in Sphinx 1.6+
 	sphinx_rtd_theme.setup(app)
 
+	# add_html_theme is new in Sphinx 1.6+
 	if hasattr(app, "add_html_theme"):
 		theme_path = os.path.abspath(os.path.dirname(__file__))
 		app.add_html_theme("domdf_sphinx_theme", theme_path)
+
+	app.set_translator("html", HTML5Translator, override=True)
 
 	return {
 			"version": __version__,
