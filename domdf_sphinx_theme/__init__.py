@@ -58,8 +58,8 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		atts = {}
 
-		old_compact_simple = self.compact_simple
-		self.context.append((self.compact_simple, self.compact_p))
+		old_compact_simple = self.compact_simple  # type: ignore
+		self.context.append((self.compact_simple, self.compact_p))  # type: ignore
 		self.compact_p = None
 		self.compact_simple = self.is_compactable(node)
 
