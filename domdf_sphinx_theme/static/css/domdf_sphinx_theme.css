@@ -5984,6 +5984,10 @@ ul.expanded li p:last-child {
     margin-bottom: 12pt !important;
 }
 
+ul.simple li p:last-child {
+    margin-bottom: 2pt !important;
+}
+
 
 div.contents li p:last-child {
     margin-bottom: 0 !important;
