@@ -27,70 +27,72 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	* - Other
 	  - |license| |language| |requires| |pre_commit|
 
-.. |docs| image:: https://img.shields.io/readthedocs/domdf_sphinx_theme/latest?logo=read-the-docs
-	:target: https://domdf_sphinx_theme.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+.. |docs| rtfd-shield::
+	:project: domdf_sphinx_theme
+	:alt: Documentation Build Status
 
-.. |docs_check| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Docs%20Check/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Docs+Check%22
+.. |docs_check| actions-shield::
+	:workflow: Docs Check
 	:alt: Docs Check Status
 
-.. |travis| image:: https://img.shields.io/travis/com/domdfcoding/domdf_sphinx_theme/master?logo=travis
-	:target: https://travis-ci.com/domdfcoding/domdf_sphinx_theme
+.. |travis| travis-shield::
+	:travis-site: com
 	:alt: Travis Build Status
 
-.. |actions_windows| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Windows%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Windows+Tests%22
+.. |actions_windows| actions-shield::
+	:workflow: Windows Tests
 	:alt: Windows Tests Status
 
-.. |actions_macos| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/macOS%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22macOS+Tests%22
+.. |actions_macos| actions-shield::
+	:workflow: macOS Tests
 	:alt: macOS Tests Status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/domdf_sphinx_theme/requirements/?branch=master
+.. |requires| requires-io-shield::
 	:alt: Requirements Status
 
-.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/domdf_sphinx_theme?logo=codefactor
-	:target: https://www.codefactor.io/repository/github/domdfcoding/domdf_sphinx_theme
+.. |codefactor| codefactor-shield::
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |pypi-version| pypi-shield::
+	:project: domdf_sphinx_theme
+	:version:
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/domdf_sphinx_theme?logo=python&logoColor=white
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |supported-versions| pypi-shield::
+	:project: domdf_sphinx_theme
+	:py-versions:
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |supported-implementations| pypi-shield::
+	:project: domdf_sphinx_theme
+	:implementations:
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/domdf_sphinx_theme
-	:target: https://pypi.org/project/domdf_sphinx_theme/
+.. |wheel| pypi-shield::
+	:project: domdf_sphinx_theme
+	:wheel:
 	:alt: PyPI - Wheel
 
-.. |license| image:: https://img.shields.io/github/license/domdfcoding/domdf_sphinx_theme
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/blob/master/LICENSE
+.. |license| github-shield::
+	:license:
 	:alt: License
 
-.. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/domdf_sphinx_theme
+.. |language| github-shield::
+	:top-language:
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/domdf_sphinx_theme/v0.2.3
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/pulse
+.. |commits-since| github-shield::
+	:commits-since: v0.2.3
 	:alt: GitHub commits since tagged version
 
-.. |commits-latest| image:: https://img.shields.io/github/last-commit/domdfcoding/domdf_sphinx_theme
-	:target: https://github.com/domdfcoding/domdf_sphinx_theme/commit/master
+.. |commits-latest| github-shield::
+	:last-commit:
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2020
+.. |maintained| maintained-shield:: 2020
 	:alt: Maintenance
 
-.. |pre_commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-	:target: https://github.com/pre-commit/pre-commit
+.. |pre_commit| pre-commit-shield::
 	:alt: pre-commit
 
 .. end shields
@@ -111,14 +113,7 @@ Changes include:
 	:hidden:
 
 	Home<self>
-
-.. toctree::
-	:maxdepth: 3
-	:caption: Documentation
-
 	installation
-	contributing
-	Source
 
 .. toctree::
 	:maxdepth: 2
@@ -136,6 +131,14 @@ Changes include:
 	:caption: This is an incredibly long caption for a long menu
 
 	demo/long
+
+
+.. toctree::
+	:maxdepth: 3
+	:caption: Contributing
+
+	contributing
+	Source
 
 .. start links
 

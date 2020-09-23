@@ -29,7 +29,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 
 .. |docs| image:: https://img.shields.io/readthedocs/domdf_sphinx_theme/latest?logo=read-the-docs
 	:target: https://domdf_sphinx_theme.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+	:alt: Documentation Build Status
 
 .. |docs_check| image:: https://github.com/domdfcoding/domdf_sphinx_theme/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/actions?query=workflow%3A%22Docs+Check%22
