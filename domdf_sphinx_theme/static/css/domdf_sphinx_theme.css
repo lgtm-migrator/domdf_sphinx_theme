@@ -6044,3 +6044,11 @@ code.docutils.literal.notranslate:not(.xref) {
 .toctree-l1 code.docutils.literal.notranslate {
     font-weight: normal;
 }
+
+.toctree-wrapper .toctree-l1 code.docutils.literal.notranslate {
+    font-weight: bold;
+}
+
+.toctree-wrapper .toctree-l1 code.docutils.literal.notranslate:not(.xref) {
+    font-weight: normal;
+}
