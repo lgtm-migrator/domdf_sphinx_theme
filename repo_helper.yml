@@ -12,7 +12,6 @@ short_desc: "Customised 'sphinx_rtd_theme' used by my Python projects."
 enable_conda: false
 enable_tests: false
 
-
 manifest_additional:
  - "recursive-include domdf_sphinx_theme *.*"
  - "recursive-exclude domdf_sphinx_theme .*.swp"
@@ -23,7 +22,6 @@ python_versions:
  - '3.7'
  - '3.8'
  - '3.9-dev'
-
 
 classifiers:
  - 'Development Status :: 4 - Beta'
@@ -38,6 +36,7 @@ classifiers:
  - "Topic :: Software Development :: Documentation"
  - 'Topic :: Software Development :: Libraries :: Python Modules'
  - 'Topic :: Utilities'
+
 exclude_files:
  - setup
  - conf

@@ -66,36 +66,36 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 		classes = []
 
 		if self.compact_simple and not old_compact_simple:
-			classes.append('simple')
+			classes.append("simple")
 
 		if any(len(child) > 1 for child in node):
-			classes.append('expanded')
+			classes.append("expanded")
 
 		if classes:
 			atts["class"] = " ".join(classes)
 
-		self.body.append(self.starttag(node, 'ul', **atts))
+		self.body.append(self.starttag(node, "ul", **atts))
 
 	def visit_enumerated_list(self, node):
 		atts = {}
 		classes = []
 
-		if 'start' in node:
-			atts['start'] = node['start']
+		if "start" in node:
+			atts["start"] = node["start"]
 
-		if 'enumtype' in node:
-			classes.append(node['enumtype'])
+		if "enumtype" in node:
+			classes.append(node["enumtype"])
 
 		if self.is_compactable(node):
-			classes.append('simple')
+			classes.append("simple")
 
 		if any(len(child) > 1 for child in node):
-			classes.append('expanded')
+			classes.append("expanded")
 
 		if classes:
-			atts["class"] = " ".join(classes)
+			atts["class"] = ' '.join(classes)
 
-		self.body.append(self.starttag(node, 'ol', **atts))
+		self.body.append(self.starttag(node, "ol", **atts))
 
 
 def setup(app: Sphinx):
