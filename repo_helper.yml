@@ -9,39 +9,39 @@ version: "0.2.3"
 license: "MIT"
 short_desc: "Customised 'sphinx_rtd_theme' used by my Python projects."
 
-enable_conda: False
-enable_tests: False
+enable_conda: false
+enable_tests: false
 
 
 manifest_additional:
-  - "recursive-include domdf_sphinx_theme *.*"
-  - "recursive-exclude domdf_sphinx_theme .*.swp"
+ - "recursive-include domdf_sphinx_theme *.*"
+ - "recursive-exclude domdf_sphinx_theme .*.swp"
 
 # Versions to run tests for
 python_versions:
-  - '3.6'
-  - '3.7'
-  - '3.8'
-  - '3.9-dev'
+ - '3.6'
+ - '3.7'
+ - '3.8'
+ - '3.9-dev'
 
 
 classifiers:
-  - 'Development Status :: 4 - Beta'
-#  - "Development Status :: 5 - Production/Stable"
-#  - "Development Status :: 6 - Mature"
-#  - "Development Status :: 7 - Inactive"
-  - 'Intended Audience :: Developers'
-  - 'Topic :: Utilities'
-  - "Topic :: Documentation"
-  - "Topic :: Software Development :: Documentation"
-  - 'Framework :: Sphinx'
-  - 'Framework :: Sphinx :: Theme'
-  - 'Environment :: Web Environment'
-
+ - 'Development Status :: 4 - Beta'
+ - 'Environment :: Web Environment'
+ - 'Framework :: Sphinx'
+ - 'Framework :: Sphinx :: Extension'
+ - 'Framework :: Sphinx :: Theme'
+ - 'Intended Audience :: Developers'
+ - 'Programming Language :: JavaScript'
+ - "Topic :: Documentation"
+ - 'Topic :: Documentation :: Sphinx'
+ - "Topic :: Software Development :: Documentation"
+ - 'Topic :: Software Development :: Libraries :: Python Modules'
+ - 'Topic :: Utilities'
 exclude_files:
-  - setup
-  - conf
-  - rtfd
+ - setup
+ - conf
+ - rtfd
 
 travis_pypi_secure: "dPfk1VsFPp4s18N3E/rJwSt9JQOSf5zSQ4+Eel7gQuyp85pCKyAlKAlrw5+GUTuh0ppey7/k09xTTMdLoEmqWI40bpGm3Xcf74oQZVTOdBp4S7hUtp6pjmILMHiNdaEnjQv6sGUMZzEdHeQwe2s6d+rjbym2e2gkPMb6uYnl57W4Gx/nzB4B014bjX1MokI1UewDN09/SJRMEgySGJoEdDFJ1IAcCmSo5KXsdgUpsok8wmDI8Oi4KXW6zXE3GWmSIkGp/REdeYtNgRvFCpPt+2kp4NhAvubIdfF0oN24sBHtTcDSnFH7vpKO1PuVTEgEAfto9oga0886XJJAxwISq2aeLjtk2JDmA21U6NrJn/KMY+HI2BL3+JBEwna19mUsvFfroUgI6scRxhx2NoljG+ZBoY/Ith9X1vsvNUsUOhfZ0WS8oEYE5Xu/Y2pL5WqrEEu4S+Cwlh2JE/NxM4HwQnGki4ffKE8EFCIQwM1ePXPbpSc0crK+av2f1EFkGvbL2PWfUpcYiOiwXqF8sZ3T4WmCGtvVHTzBp3IJTZ3FXGjEMUz4KEFY2ltStdmZ9xiZ++S8DmEETOsCaWG6MpelTXprIfqiyNlTOAjvA7rabKJptwUK9J2i2cc/lxNwaFyQqks26c4u+9hLnTP+vN0W2wIq3YFSRFDgUWpTlSli7QM="
 
