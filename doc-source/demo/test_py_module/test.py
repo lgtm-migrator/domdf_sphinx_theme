@@ -40,7 +40,9 @@ class Foo:
 	flox = 1.5  #: Doc comment for Foo.flox. One line only.
 
 	baz = 2
-	"""Docstring for class attribute Foo.baz."""
+	"""
+	Docstring for class attribute Foo.baz.
+	"""
 
 	def __init__(self, qux, spam=False):
 		"""Start the Foo.
@@ -55,7 +57,9 @@ class Foo:
 		self.qux = 3
 
 		self.spam = 4
-		"""Docstring for instance attribute spam."""
+		"""
+		Docstring for instance attribute spam.
+		"""
 
 	def add(self, val1, val2):
 		"""Return the added values.

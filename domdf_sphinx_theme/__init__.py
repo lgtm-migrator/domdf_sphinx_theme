@@ -72,7 +72,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 			classes.append("expanded")
 
 		if classes:
-			atts["class"] = " ".join(classes)
+			atts["class"] = ' '.join(classes)
 
 		self.body.append(self.starttag(node, "ul", **atts))
 
