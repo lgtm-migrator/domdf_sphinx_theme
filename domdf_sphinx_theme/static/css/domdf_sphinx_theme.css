@@ -6052,3 +6052,8 @@ code.docutils.literal.notranslate:not(.xref) {
 .toctree-wrapper .toctree-l1 code.docutils.literal.notranslate:not(.xref) {
     font-weight: normal;
 }
+
+div.highlight {
+    -moz-tab-size: 4; /* Firefox */
+    tab-size: 4;
+}
