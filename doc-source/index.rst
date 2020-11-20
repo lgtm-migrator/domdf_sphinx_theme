@@ -35,17 +35,17 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 	:workflow: Docs Check
 	:alt: Docs Check Status
 
-.. |travis| travis-shield::
-	:travis-site: com
-	:alt: Travis Build Status
+.. |travis| actions-shield::
+	:workflow: Linux Tests
+	:alt: Linux Test Status
 
 .. |actions_windows| actions-shield::
 	:workflow: Windows Tests
-	:alt: Windows Tests Status
+	:alt: Windows Test Status
 
 .. |actions_macos| actions-shield::
 	:workflow: macOS Tests
-	:alt: macOS Tests Status
+	:alt: macOS Test Status
 
 .. |requires| requires-io-shield::
 	:alt: Requirements Status
