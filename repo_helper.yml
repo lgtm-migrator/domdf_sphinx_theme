@@ -43,5 +43,9 @@ exclude_files:
  - conf
  - rtfd
 
-
 sphinx_html_theme: domdf_sphinx_theme
+
+keywords:
+ - sphinx
+ - sphinx-theme
+ - documentation
