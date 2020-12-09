@@ -51,7 +51,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 	Custom :class:`sphinx.writers.html5.HTML5Translator` to adjust spacing in bullet pointed lists.
 	"""
 
-	def visit_bullet_list(self, node: Element) -> None:
+	def visit_bullet_list(self, node: Element) -> None:  # noqa: D102
 		if len(node) == 1 and isinstance(node[0], addnodes.toctree):
 			# avoid emitting empty <ul></ul>
 			raise nodes.SkipNode
@@ -76,7 +76,7 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		self.body.append(self.starttag(node, "ul", **atts))
 
-	def visit_enumerated_list(self, node):
+	def visit_enumerated_list(self, node):  # noqa: D102
 		atts = {}
 		classes = []
 
