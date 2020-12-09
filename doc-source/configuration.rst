@@ -143,7 +143,7 @@ Miscellaneous options
     :default: ``#2980B9``
 
     Changes the background of the search area in the navigation bar. The value
-    can be anything valid in a CSS `background` property.
+    can be anything valid in a CSS ``background`` property.
 
 .. _canonical URL: https://en.wikipedia.org/wiki/Canonical_link_element
 
