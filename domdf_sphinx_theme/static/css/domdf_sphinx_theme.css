@@ -6057,3 +6057,20 @@ div.highlight {
     -moz-tab-size: 4; /* Firefox */
     tab-size: 4;
 }
+
+/* Custom styling for tables */
+
+.rst-content table.docutils th.stub {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    vertical-align: text-bottom;
+}
+
+.rst-content table.docutils th.stub p{
+    display: inline;
+}
+
+.rst-content table.docutils td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
