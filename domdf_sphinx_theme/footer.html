@@ -30,11 +30,19 @@
         </span>
       {% endtrans %}
     {%- elif commit %}
-      {% trans commit=commit %}
-        <span class="commit">
-          Revision <code>{{ commit }}</code>.
-        </span>
-      {% endtrans %}
+			<span class="commit"> Revision
+				{% if github_user and github_repo%}
+					<a href="https://github.com/{{ github_user }}/{{ github_repo }}/tree/{{ commit }}">
+				{% else %}
+					<code>
+				{% endif %}
+				{{ commit }}
+				{% if github_user and github_repo%}
+					</a>
+				{% else %}
+					</code>
+				{% endif %}.
+			</span>
     {%- elif last_updated %}
       <span class="lastupdated">
         {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
