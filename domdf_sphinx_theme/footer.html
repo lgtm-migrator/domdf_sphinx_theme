@@ -55,6 +55,9 @@
   {%- if show_sphinx %}
   {% trans %}Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>{% endtrans %}.
   {%- endif %}
+	{% if show_source and has_source and sourcename %}
+		<a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow"> {{ _('Show Source') }}.</a>
+	{% endif %}
 
   {%- block extrafooter %} {% endblock %}
 
