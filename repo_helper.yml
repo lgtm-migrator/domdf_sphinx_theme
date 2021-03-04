@@ -39,13 +39,17 @@ classifiers:
  - 'Topic :: Utilities'
 
 exclude_files:
- - setup
  - conf
  - rtfd
 
 sphinx_html_theme: domdf_sphinx_theme
+use_whey: true
 
 keywords:
  - sphinx
  - sphinx-theme
  - documentation
+
+entry_points:
+ "sphinx.html_themes":
+   - "domdf_sphinx_theme = domdf_sphinx_theme"

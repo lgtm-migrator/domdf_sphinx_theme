@@ -1,6 +1,6 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
 
 [project]
 name = "domdf_sphinx_theme"
@@ -23,3 +23,27 @@ Homepage = "https://github.com/domdfcoding/domdf_sphinx_theme"
 Documentation = "https://domdf_sphinx_theme.readthedocs.io/en/latest"
 
 [tool.importcheck]
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Framework :: Sphinx :: Theme",
+    "Intended Audience :: Developers",
+    "Programming Language :: JavaScript",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+additional-files = [ "recursive-include domdf_sphinx_theme *.*", "recursive-exclude domdf_sphinx_theme .*.swp",]
+
+[project.entry-points."sphinx.html_themes"]
+domdf_sphinx_theme = "domdf_sphinx_theme"
