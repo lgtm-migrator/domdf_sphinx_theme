@@ -148,12 +148,17 @@ Changes include:
 	demo/long
 
 
-.. toctree::
-	:maxdepth: 3
-	:caption: Contributing
+.. only:: html
 
-	contributing
-	Source
+	.. toctree::
+		:caption: Links
+		:hidden:
+
+		GitHub <https://github.com/domdfcoding/domdf_sphinx_theme>
+		PyPI <https://pypi.org/project/domdf_sphinx_theme>
+		Contributing Guide <https://contributing-to-sphinx-toolbox.readthedocs.io/en/latest/>
+		Source
+
 
 .. start links
 

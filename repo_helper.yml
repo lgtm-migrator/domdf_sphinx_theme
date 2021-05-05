@@ -44,7 +44,7 @@ classifiers:
 
 exclude_files:
  - conf
- - rtfd
+ - contributing
 
 keywords:
  - sphinx
