@@ -31,8 +31,8 @@ import os.path
 import sphinx.transforms
 import sphinx.writers.html5
 import sphinx_rtd_theme  # type: ignore
-from docutils import nodes
-from docutils.nodes import Element
+from docutils import nodes  # type: ignore
+from docutils.nodes import Element  # type: ignore
 from sphinx import addnodes
 from sphinx.application import Sphinx
 
@@ -72,7 +72,7 @@ class FilterSystemMessages(sphinx.transforms.FilterSystemMessages):
 
 class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 	"""
-	Custom :class:`sphinx.writers.html5.HTML5Translator` to adjust spacing in bullet pointed lists.
+	Custom :class:`sphinx.writers.html5.HTML5Translator` to adjust spacing in bullet pointed lists, among other things.
 	"""
 
 	def visit_bullet_list(self, node: Element) -> None:  # noqa: D102
@@ -121,10 +121,10 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		self.body.append(self.starttag(node, "ol", **atts))
 
-	def visit_desc_name(self, node: addnodes.desc_name):
+	def visit_desc_name(self, node: addnodes.desc_name):  # noqa: D102
 		self.body.append(self.starttag(node, "code", '', CLASS="sig-name descname"))
 
-	def depart_desc_name(self, node: addnodes.desc_name):
+	def depart_desc_name(self, node: addnodes.desc_name):  # noqa: D102
 		self.body.append("</code>")
 
 
