@@ -129,8 +129,15 @@ Changes include:
 	:hidden:
 
 	Home<self>
+
+.. toctree::
+	:maxdepth: 2
+	:numbered:
+	:caption: Usage
+
 	installation
 	configuration
+	license
 
 .. toctree::
 	:maxdepth: 2
@@ -150,16 +157,13 @@ Changes include:
 	demo/long
 
 
-.. only:: html
+.. sidebar-links::
+	:caption: Links
+	:github:
+	:pypi: domdf_sphinx_theme
 
-	.. toctree::
-		:caption: Links
-		:hidden:
-
-		GitHub <https://github.com/domdfcoding/domdf_sphinx_theme>
-		PyPI <https://pypi.org/project/domdf_sphinx_theme>
-		Contributing Guide <https://contributing-to-sphinx-toolbox.readthedocs.io/en/latest/>
-		Source
+	Contributing Guide <https://contributing-to-sphinx-toolbox.readthedocs.io/en/latest/>
+	Source
 
 
 .. start links
