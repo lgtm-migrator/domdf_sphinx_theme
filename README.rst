@@ -88,7 +88,7 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/domdf_sphinx_theme
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/domdf_sphinx_theme/v21.3.0
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/domdf_sphinx_theme/v22.0.0
 	:target: https://github.com/domdfcoding/domdf_sphinx_theme/pulse
 	:alt: GitHub commits since tagged version
 
@@ -107,10 +107,10 @@ Based on `sphinx_rtd_theme <https://github.com/readthedocs/sphinx_rtd_theme>`_ b
 
 Changes include:
 
-* Smooth scrolling between sections.
 * Wider body by default.
 * Extra spacing in lists.
 * Some JavaScript trickery to fix the ReadTheDocs versions menu.
+
 
 Installation
 --------------
