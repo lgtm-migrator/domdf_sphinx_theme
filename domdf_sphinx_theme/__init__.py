@@ -121,6 +121,12 @@ class HTML5Translator(sphinx.writers.html5.HTML5Translator):
 
 		self.body.append(self.starttag(node, "ol", **atts))
 
+	def visit_desc_name(self, node: addnodes.desc_name):
+		self.body.append(self.starttag(node, 'code', '', CLASS='sig-name descname'))
+
+	def depart_desc_name(self, node: addnodes.desc_name):
+		self.body.append('</code>')
+
 
 def setup(app: Sphinx):
 	"""
