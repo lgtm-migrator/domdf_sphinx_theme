@@ -10,6 +10,9 @@
     "no-descending-specificity": null,
     "no-duplicate-selectors": null,
     "no-empty-source": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-block-no-duplicate-properties": null,
+    "property-no-unknown": null,
     "shorthand-property-no-redundant-values": [true, {}],
     "at-rule-no-unknown": [true, {"ignoreAtRules": ["function", "for", "return", "mixin", "include"]}]}
 }
