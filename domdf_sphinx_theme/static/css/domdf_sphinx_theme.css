@@ -4579,7 +4579,7 @@ h1 {
 	font-size: 175%;
 }
 
-h2, .rst-content .toctree-wrapper p.caption {
+h2 {
 	font-size: 150%;
 }
 
@@ -6108,6 +6108,6 @@ MIT Licensed
 	vertical-align: middle;
 }
 
-.toctree-wrapper p.caption {
+.rst-content .toctree-wrapper p.caption {
 	font-size: 130%;
 }
