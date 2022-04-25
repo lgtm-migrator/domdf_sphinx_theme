@@ -6107,3 +6107,7 @@ MIT Licensed
 	margin: 0 0.25rem;
 	vertical-align: middle;
 }
+
+.toctree-wrapper p.caption {
+	font-size: 130%;
+}
