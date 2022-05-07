@@ -5256,10 +5256,6 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 	font-size: 90%;
 }
 
-.genindextable li > ul {
-	margin-left: 24px;
-}
-
 @media screen and (max-width: 768px) {
 	.wy-body-for-nav {
 		background: #fcfcfc;
@@ -6110,4 +6106,8 @@ MIT Licensed
 
 .rst-content .toctree-wrapper p.caption {
 	font-size: 130%;
+}
+
+.genindextable li > ul {
+	margin-left: 24px !important;
 }
